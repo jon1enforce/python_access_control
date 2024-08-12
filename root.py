@@ -59,5 +59,5 @@ sef temp_direct(newpath):
 
 if __name__ = '__main__':
     path='/sandbox'
-    tracing(path)#set global direct_now
-    dict()#get global direct_now
+    tracing(path)#set global direct_now, trace for reverse...
+    dict()#get global direct_now, set access...
