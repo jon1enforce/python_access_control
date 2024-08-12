@@ -12,7 +12,7 @@ direct_now = '/namespace'
 
 def tracing(path):
     tracer = trace.Trace(
-        ignoredrs = [sys.prefix, sys.exec_prefix],
+        ignoredirs = [sys.prefix, sys.exec_prefix],
             trace=0,
             conut=0)
     tracer.run('temp_direct(path)')
