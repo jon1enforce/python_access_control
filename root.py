@@ -7,7 +7,7 @@ import time
 import trace
 import tempfile
 import os
-tmp_now = :/tmp/namespace:
+tmp_now = '/tmp/namespace'
 direct_now = '/namespace'
 
 def tracing(path):
