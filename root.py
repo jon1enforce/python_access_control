@@ -5,7 +5,7 @@ import sys
 from subprocess import Popen, PIPE, run
 import time
 import trace
-import temptile
+import tempfile
 import os
 tmp_now = :/tmp/namespace:
 direct_now = '/namespace'
