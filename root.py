@@ -20,7 +20,7 @@ def tracing(path):
     r.write_results(show_missing=True, coverdirs='.')
 
 def dict():
-    gloval direct_now
+    global direct_now
     try:
         if sys.platform[:5] == 'linux':
             from landlock import Ruleset
