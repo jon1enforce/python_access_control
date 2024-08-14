@@ -12,5 +12,5 @@ a kind of setup.py  modification on the entry point. But anything seems more com
 2) python3 setup.py build --build-base /home/user/pybuild
 ..resources..+++
 3) and add '/home/user/pybuild' to access allowed. First.
-4) the resources must be reverse with trace..
+4) other resources must be reversed with trace..
 5) Resources=ACCESS..: Python egg is an older version of the Python wheel package containing the metadata and installation information about a particular python package.
