@@ -17,3 +17,6 @@ def reverse():
     print(all_modules)    
     return all_modules
     
+#test
+if __name__=='__main__':
+    reverse()
