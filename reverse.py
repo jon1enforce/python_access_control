@@ -14,4 +14,6 @@ def reverse():
     all_modules = []
     for i in imports:
         all_modules.append(str(sysconfig.get_path('purelib')))
+    print(all_modules)    
+    return all_modules
     
