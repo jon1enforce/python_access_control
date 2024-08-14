@@ -9,8 +9,7 @@ A suitable access control needs adjustments to software... But iam searching for
 a kind of setup.py  modification on the entry point. But anything seems more complicated since python3; like setuptools and..
 # try on an example..
 1) mkdir /home/user/pybuild
-2) python3 setup.py build --build-base /home/user/pybuild
+2) python3 setup.py build --build-base .
 ..resources..+++
-3) and add '/home/user/pybuild' to access allowed. First.
 4) other resources must be reversed with trace..
 5) another Resource: Python egg is an older version of the Python wheel package containing the metadata and installation information about a particular python package.
