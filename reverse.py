@@ -8,7 +8,7 @@ def reverse():
     for x in imports:
         try:
             modules[x] = __import__(x)
-            print "Successfully imported ", x, '.'
+            print ("Successfully imported ", x, '.')
         except ImportError:
             print "Error importing ", x, '.'
     all_modules = []
