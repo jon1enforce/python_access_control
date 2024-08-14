@@ -7,3 +7,7 @@ just trace and set access rules..
 # universal access control approach is not always suitable..
 A suitable access control needs adjustments to software... But iam searching for such an example;
 a kind of setup.py  modification on the entry point. But anything seems more complicated since python3; like setuptools and..
+# try on an example..
+mkdir /home/user/pybuild
+python3 setup.py build --build-base /home/user/pybuild
+..resources..+++
