@@ -10,7 +10,7 @@ def reverse():
             modules[x] = __import__(x)
             print ("Successfully imported ", x, '.')
         except ImportError:
-            print "Error importing ", x, '.'
+            print("Error importing ", x, '.')
     all_modules = []
     for i in imports:
         all_modules.append(str(sysconfig.get_path('purelib')))
