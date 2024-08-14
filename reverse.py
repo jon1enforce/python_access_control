@@ -1,3 +1,6 @@
+#command line 
+#pipdeptree --freeze --warn silence | grep -P '^[\w0-9-=.]+' > reverse.txt 4.2)
+#command line
 def reverse():
     import sysconfig
     imports = ['sys', 'itertools', 'datetime', 'os']
