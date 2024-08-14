@@ -1,6 +1,7 @@
 #command line 
 #pipdeptree --freeze --warn silence | grep -P '^[\w0-9-=.]+' > reverse.txt
 #command line
+import os
 def reverse():
     import sysconfig
     #exmaple imports..
@@ -9,22 +10,24 @@ def reverse():
     data = my_file.read()  
     imports = data.replace('\n', ' ').split(".")  
     my_file.close() 
-
+    all_modules = []
     modules = {}
+    path = []
     for x in imports:
         try:
             modules[x] = __import__(x)
             print ("Successfully imported ", x, '.')
         except ImportError:
             print("Error importing ", x, '.')
-    all_modules = []
-    for i in imports:
-        all_modules.append(str(sysconfig.get_path('purelib')))
-    print(all_modules)    
-    return all_modules
+            continue
+        all_modules.append(modules[x])
+        path.append(str(os.path.abspath(modules[x].__file__)))
+    print(path)
+    return path
     
 #test
 if __name__=='__main__':
     reverse()
 #returns /usr/local/lib/python3.11/dist-packages at all..
 #use the path for access control
+
