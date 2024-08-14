@@ -8,7 +8,6 @@ def reverse():
     my_file = open("reverse.txt", "r") 
     data = my_file.read()  
     imports = data.replace('\n', ' ').split(".")  
-    print(data_into_list) 
     my_file.close() 
 
     modules = {}
