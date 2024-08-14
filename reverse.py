@@ -3,7 +3,14 @@
 #command line
 def reverse():
     import sysconfig
-    imports = ['sys', 'itertools', 'datetime', 'os']
+    #exmaple imports..
+    #imports = ['sys', 'itertools', 'datetime', 'os'] 
+    my_file = open("reverse.txt", "r") 
+    data = my_file.read()  
+    imports = data.replace('\n', ' ').split(".")  
+    print(data_into_list) 
+    my_file.close() 
+
     modules = {}
     for x in imports:
         try:
