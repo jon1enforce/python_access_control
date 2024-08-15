@@ -4,18 +4,22 @@
 import os
 def reverse():
     import sysconfig
-    #exmaple imports..
-    #imports = ['sys', 'itertools', 'datetime', 'os'] 
+    #imports_example = ['sys', 'itertools', 'datetime', 'os'] 
     my_file = open("reverse.txt", "r") 
     data = my_file.read()  
-    imports = data.replace('==', '\n').replace('-', '_').split("\n")
-    imports = imports[::2]
-    
+    imports_source = data.replace('-', '_').split("\n")
+    imports = []
+    for i in imports_source:
+        x = i.split('==')
+        imports.append(x[0])
+
     my_file.close()
     all_modules = []
     modules = {}
     path = []
     for x in imports:
+        if x == None or x == '' or x == ' ':
+            continue
         try:
             modules[x] = __import__(x)
             print ("Successfully imported ", x, '.')
@@ -23,14 +27,9 @@ def reverse():
             print("Error importing ", x, '.')
             continue
         all_modules.append(modules[x])
-        #path.append(str(os.path.abspath(modules[x].__file__)))
     print(all_modules)
     return all_modules
-    
 #test
 if __name__=='__main__':
     reverse()
-
-    reverse()
 #returns /usr/local/lib/python3.11/dist-packages at all..
-#use the path for access control
