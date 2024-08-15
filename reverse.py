@@ -24,8 +24,8 @@ def reverse():
             continue
         all_modules.append(modules[x])
         #path.append(str(os.path.abspath(modules[x].__file__)))
-    #print(path)
-    return path
+    print(all_modules)
+    return all_modules
     
 #test
 if __name__=='__main__':
