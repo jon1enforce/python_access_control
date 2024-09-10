@@ -1,5 +1,5 @@
 # python_access_control
-overhead of python code; with [M]andatory [A]ccess [C]ontrol
+overhead of python code; with [M]andatory [A]ccess [C]ontrol(linux,openbsd)(just use jails for at freebsd..)
 # NOTICE
 setup.py is just a testcase, and must be substitute! Try to put spyder-IDE in a sandbox, or try another app!
 # something stupid:
