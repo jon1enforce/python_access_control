@@ -16,3 +16,13 @@ a kind of setup.py  modification on the entry point. But anything seems more com
 1) try reverse on setup.py (example-code, must be substituted)
 2) reverse.py needs a frozen modules fix..landlock does not work as expected, maybe because of frozen landlock or so..
 3) root.py is just an overhead!
+# Something completely different(freebsd): How do you know you are inside a jail?
+At freebsd, the jails system is far enough, to control access to different users/apps..like a jail for every app?
+1) sysctl -a | grep jail
+2 )security.jail.set_hostname_allowed: 1
+3) security.jail.socket_unixiproute_only: 1
+4) security.jail.sysvipc_allowed: 0
+5) security.jail.enforce_statfs: 2
+6) security.jail.allow_raw_sockets: 0
+7) security.jail.chflags_allowed: 0
+8) security.jail.jailed: 1
