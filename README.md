@@ -4,10 +4,10 @@ overhead of python code; with [M]andatory [A]ccess [C]ontrol
 setup.py is just a testcase, and must be substitute!
 # something stupid:
 https://www.youtube.com/watch?v=UNRnSaXajC4
-# framework description: REVERSE on SETUP.PY, and SET
+# framework description: REVERSE on SETUP.PY, and SET RULES
 FIRST install an app -- with reverse.sh (reverse.py), and set the access allowed on all dependencies
 ..listed at setup.py. All others are DENIED! -- or only read, not write!
-# framework description: TRACE and SET
+# framework description: TRACE and SET RULES
 SECOND just trace and set access rules.. with root.py (overhead code must be expanded)
 # universal access control approach is not always suitable..
 A suitable access control needs adjustments to software... But iam searching for such an example;
