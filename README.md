@@ -4,7 +4,7 @@ overhead of python code; with [M]andatory [A]ccess [C]ontrol
 https://www.youtube.com/watch?v=UNRnSaXajC4
 # framework description: REVERSE on SETUP.PY, and SET
 FIRST install an app -- with reverse.sh (reverse.py), and set the access allowed on all dependencies
-..listed at setup.py. All others are DENIED!
+..listed at setup.py. All others are DENIED! -- or only read, not write!
 # framework description: TRACE and SET
 SECOND just trace and set access rules.. with root.py (overhead code must be expanded)
 # universal access control approach is not always suitable..
