@@ -2,9 +2,10 @@
 overhead of python code; with [M]andatory [A]ccess [C]ontrol
 # something stupid:
 https://www.youtube.com/watch?v=UNRnSaXajC4
-# framework description:
+# framework description: REVERSE on SETUP.PY, and SET
 FIRST install with reverse.sh (reverse.py)
 ..on setup.py
+# framework description: TRACE and SET
 SECOND just trace and set access rules.. with root.py (overhead code must be expanded)
 # universal access control approach is not always suitable..
 A suitable access control needs adjustments to software... But iam searching for such an example;
