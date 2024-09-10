@@ -1,5 +1,7 @@
 # python_access_control
 overhead of python code; with [M]andatory [A]ccess [C]ontrol
+# NOTICE
+setup.py is just a testcase, and must be substitute!
 # something stupid:
 https://www.youtube.com/watch?v=UNRnSaXajC4
 # framework description: REVERSE on SETUP.PY, and SET
