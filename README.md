@@ -3,7 +3,7 @@ overhead of python code; with [M]andatory [A]ccess [C]ontrol
 # something stupid:
 https://www.youtube.com/watch?v=UNRnSaXajC4
 # framework description:
-FIRST install with reserve.sh (reserver.py)
+FIRST install with reverse.sh (reverse.py)
 ..on setup.py
 SECOND just trace and set access rules.. with root.py (overhead code must be expanded)
 # universal access control approach is not always suitable..
