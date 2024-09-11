@@ -1,5 +1,5 @@
 # python_access_control
-overhead of python code; with [M]andatory [A]ccess [C]ontrol(for linux or openbsd)
+root.py is an overhead of python code; with [M]andatory [A]ccess [C]ontrol(for linux or openbsd)
 1) Synopsis (setup.py)
 2) bash reverse.sh
    
