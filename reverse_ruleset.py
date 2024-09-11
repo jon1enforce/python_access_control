@@ -16,15 +16,13 @@ def main():
                 try:
                     count = count + 1
                     line = str(line)
-                    j = line.replace('__init__.py', '').replace(' ', '').replace("\n", "")
+                    j = line.replace('__init__.py', '').replace(' ', '').replace("\n", "").replace("'", "")
                     print(count)
                     print(j)
-                    if j.endswith("/'") and j.startswith("'/"):
-                        print('xxx')
+                    if j.endswith("/") and j.startswith("/")
                         rs.allow(j)
-                        time.sleep(0.5)
-                except:
-                    print('error..')
+                except Exception as error:
+                    print(error)
             rs.apply()
             print('..reverse..on..setup.py..set..linux-landlock')
         elif sys.platform[:7] == 'openbsd':
